@@ -1,0 +1,44 @@
+ext {
+    plugins = [library    : 'com.android.library',
+               application: 'com.android.application',
+               maven      : 'com.github.dcendents.android-maven',
+               bintray    : 'com.jfrog.bintray']
+
+    android = [applicationId    : "com.zouxinjie.recyclerview.sample",
+               compileSdkVersion: 28,
+               buildToolsVersion: "28.0.3",
+               minSdkVersion    : 16,
+               targetSdkVersion : 28,
+               versionCode      : 1,
+               versionName      : "1.0.0",]
+
+    bintray = [version       : "1.0.0",
+
+               siteUrl       : 'https://github.com/zxinjie/SwiperRecyclerView',
+               gitUrl        : 'https://github.com/zxinjie/SwiperRecyclerView.git',
+
+               group         : "com.zxinjie.recyclerview",
+
+               packaging     : 'aar',
+               name          : 'SwipeRecyclerView',
+               description   : 'SwipeRecyclerView For Android',
+
+               licenseName   : 'The Apache Software License, Version 2.0',
+               licenseUrl    : 'http://www.apache.org/licenses/LICENSE-2.0.txt',
+
+               developerId   : 'zxinjie',
+               developerName : 'zxinjie',
+               developerEmail: 'zouxinjie126@gmail.com',
+
+               binrayLibrary : "",
+               bintrayRepo   : "maven",
+               bintrayUser   : 'zouxinjie126',
+               bintrayLicense: "Apache-2.0"]
+
+    dependencies = [
+            material      : 'com.google.android.material:material:1.0.0',
+            xAppCompat   : 'androidx.appcompat:appcompat:1.0.2',
+            xRecyclerView: 'androidx.recyclerview:recyclerview:1.0.0',
+            xCardView    : 'androidx.cardview:cardview:1.0.0'
+    ]
+}
